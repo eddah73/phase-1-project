@@ -1,0 +1,70 @@
+{
+  "rooms": [
+    {
+      "id": "1",
+      "room_number": "101",
+      "room_type": "Single",
+      "price": 5000,
+      "availability": false,
+      "image": "./image/single.jpg"
+    },
+    {
+      "id": "2",
+      "room_number": "102",
+      "room_type": "Double",
+      "price": 8000,
+      "availability": false,
+      "image": "./image/double.jpg"
+    },
+    {
+      "id": "3",
+      "room_number": "103",
+      "room_type": "Suite",
+      "price": 12000,
+      "availability": true,
+      "image": "./image/suite.jpg"
+    },
+    {
+      "id": "4",
+      "room_number": "104",
+      "room_type": "Single",
+      "price": 5000,
+      "availability": true,
+      "image": "./image/single.jpg"
+    },
+    {
+      "id": "5",
+      "room_number": "10",
+      "room_type": "Double",
+      "price": 8000,
+      "availability": true,
+      "image": "./image/double.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "eddah chepkoech",
+      "email": "eddah@gmail.com",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "username": "rose rose",
+      "email": "rose@gmail.com",
+      "password": "password123"
+    },
+    {
+      "id": "ba2f",
+      "username": "destinyFuture",
+      "email": "destiny@gmail.com",
+      "password": "kkkk"
+    },
+    {
+      "id": "6762",
+      "username": "tha destiny",
+      "email": "destinyy@gmail.com",
+      "password": "12345"
+    }
+  ]
+}
