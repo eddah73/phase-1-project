@@ -42,17 +42,17 @@ body {
     height: 100vh;
     background-color: bisque;
 }
-#vacant-rooms-content{
+/* #vacant-rooms-content{
     display: block;
 
     width: 100%;
-}
-/* .content-section {
+} */
+.content-section {
     display: none;
-} */
-/* .content-section.active {
+}
+.content-section.active {
     display: block;
-} */
+} 
 /* #register-content {
     display: flex;
     flex-direction: column;
@@ -61,4 +61,4 @@ body {
 }
 #registerForm{
    justify-content: center; 
-} */
+}  */

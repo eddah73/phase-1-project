@@ -1,27 +1,27 @@
 document.addEventListener('DOMContentLoaded',()=>{
 	
 // Get all the links and content sections
-		// const links = document.querySelectorAll('.top-navbar a,#registerForm a,#loginForm a');
-		// const contentSections = document.querySelectorAll('.content-section');
+		const links = document.querySelectorAll('.top-navbar a,#registerForm a,#loginForm a');
+		const contentSections = document.querySelectorAll('.content-section');
 		
-		// // Add event listeners to the links
-		// links.forEach(link => {
-		// 	link.addEventListener('click', event => {
-		// 		event.preventDefault();
+		// Add event listeners to the links
+		links.forEach(link => {
+			link.addEventListener('click', event => {
+				event.preventDefault();
 				
-		// 		// Get the ID of the link
-		// 		const linkId = link.id;
+				// Get the ID of the link
+				const linkId = link.id;
 				
-		// 		// Hide all content sections
-		// 		contentSections.forEach(section => {
-		// 			section.classList.remove('active');
-		// 		});
+				// Hide all content sections
+				contentSections.forEach(section => {
+					section.classList.remove('active');
+				});
 				
-		// 		// Show the corresponding content section
-		// 		const contentSection = document.getElementById(`${linkId}-content`);
-		// 		contentSection.classList.add('active');
-		// 	});
-		// });
+				// Show the corresponding content section
+				const contentSection = document.getElementById(`${linkId}-content`);
+				contentSection.classList.add('active');
+			});
+		});
 ////
 
 		fetch("http://localhost:3000/rooms")
