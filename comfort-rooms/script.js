@@ -1,28 +1,49 @@
 document.addEventListener('DOMContentLoaded',()=>{
-	
-// Get all the links and content sections
-		const links = document.querySelectorAll('.top-navbar a,#registerForm a,#loginForm a');
-		const contentSections = document.querySelectorAll('.content-section');
-		
-		// Add event listeners to the links
-		links.forEach(link => {
-			link.addEventListener('click', event => {
-				event.preventDefault();
-				
-				// Get the ID of the link
-				const linkId = link.id;
-				
-				// Hide all content sections
-				contentSections.forEach(section => {
-					section.classList.remove('active');
-				});
-				
-				// Show the corresponding content section
-				const contentSection = document.getElementById(`${linkId}-content`);
-				contentSection.classList.add('active');
-			});
-		});
-////
+	const links = document.querySelectorAll('.top-navbar a,#registerForm a,#loginForm a');
+    const contentSections = document.querySelectorAll('.content-section');
+    // Store the active content section in local storage
+	function storeActiveSection(sectionId) {
+		localStorage.setItem('activeSection', sectionId);
+	  }
+	  // Retrieve the active content section from local storage
+    function getActiveSection() {
+		return localStorage.getItem('activeSection');
+    }
+	// Add event listeners to the links
+
+	links.forEach(link => {
+		link.addEventListener('click', event => {
+		  event.preventDefault();
+	  
+		  // Get the ID of the link
+		  const linkId = link.id;
+	  
+		  // Hide all content sections
+		  contentSections.forEach(section => {
+			section.classList.remove('active');
+		  });
+	  
+		  // Show the corresponding content section
+		  const contentSection = document.getElementById(`${linkId}-content`);
+		  contentSection.classList.add('active');
+	  
+		  // Store the active content section in local storage
+		  storeActiveSection(linkId);
+		  });
+		  });
+		  // Retrieve the active content section from local storage and show it
+		  const activeSection = getActiveSection();
+		  if (activeSection) {
+			const contentSection = document.getElementById(`${activeSection}-content`);
+			contentSection.classList.add('active');
+		  }
+
+
+
+
+
+
+
 
 		fetch("http://localhost:3000/rooms")
        .then(response =>response.json())
@@ -93,27 +114,61 @@ formInput.addEventListener('submit', (e) => {
 		headers: {
 		  'Content-Type': 'application/json'
 		}
-	  }) 
+	  })
+	  //redirection to login
+	  .then(response => {
+		if (response.ok) {
+			alert('User registered successfully!');
+			formInput.reset();
+			// Redirect to login
+			document.getElementById('login').click();
+		} else {
+			alert('Registration failed.');
+		}
+	});
 })
 //login form
 	const db = fetch("http://localhost:3000/users") .then(response => response.json())
-    .then(data => (data))
-	const loginInput = document.getElementById('loginForm')
-	loginInput.addEventListener('submit',(e)=>{
+    .then(data => login(data))
+
+
+	//function login
+	
+	function login(email, password) {
+		const loginInput = document.getElementById('loginForm')
+	    loginInput.addEventListener('submit',(e)=>{
 		e.preventDefault();
-		const emailI = document.getElementById('emaill').value
-		const  passwordI = document.getElementById('passwordl').value
-		//check if user register
-		const userExist = db.find((data)=>users.email === emailI && users.password ===passwordI)
-		if(userExist == true){
-			alert('logged in succefully')
+		const users = dbData.users;
+		const userData = users.find((user) => user.email === email);
+	  
+		if (!userData) {
+		  return false; // Invalid email
 		}
-		else{
-			alert('please register')
-
+	  
+		if (userData.password !== password) {
+		  return false; // Invalid password
 		}
+	  
+		return true; // Login successful
+	  })
+	}
+	
+	// const loginInput = document.getElementById('loginForm')
+	// loginInput.addEventListener('submit',(e)=>{
+	// 	e.preventDefault();
+	// 	const emailI = document.getElementById('emaill').value
+	// 	const  passwordI = document.getElementById('passwordl').value
+	// 	//check if user register
+	// 	const userExist = db.find((data)=>users.email === emailI && users.password ===passwordI)
+	// 	if(userExist == true){
+	// 		alert('logged in succefully')
+	// 	}
+	// 	else{
+	// 		alert('please register')
 
-	})
+	// 	}
+
+	// })
     
    
 

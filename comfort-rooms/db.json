@@ -5,7 +5,7 @@
       "room_number": "101",
       "room_type": "Single",
       "price": 5000,
-      "availability": false,
+      "availability": true,
       "image": "./image/single.jpg"
     },
     {
@@ -13,7 +13,7 @@
       "room_number": "102",
       "room_type": "Double",
       "price": 8000,
-      "availability": false,
+      "availability": true,
       "image": "./image/double.jpg"
     },
     {
@@ -21,7 +21,7 @@
       "room_number": "103",
       "room_type": "Suite",
       "price": 12000,
-      "availability": true,
+      "availability": false,
       "image": "./image/suite.jpg"
     },
     {
@@ -29,12 +29,52 @@
       "room_number": "104",
       "room_type": "Single",
       "price": 5000,
-      "availability": true,
+      "availability": false,
       "image": "./image/single.jpg"
     },
     {
       "id": "5",
-      "room_number": "10",
+      "room_number": "105",
+      "room_type": "Double",
+      "price": 8000,
+      "availability": true,
+      "image": "./image/double.jpg"
+    },
+    {
+      "id": "6",
+      "room_number": "106",
+      "room_type": "Single",
+      "price": 5000,
+      "availability": true,
+      "image": "./image/single.jpg"
+    },
+    {
+      "id": "7",
+      "room_number": "107",
+      "room_type": "Double",
+      "price": 8000,
+      "availability": true,
+      "image": "./image/double.jpg"
+    },
+    {
+      "id": "8",
+      "room_number": "108",
+      "room_type": "Suite",
+      "price": 12000,
+      "availability": false,
+      "image": "./image/suite.jpg"
+    },
+    {
+      "id": "9",
+      "room_number": "109",
+      "room_type": "Single",
+      "price": 5000,
+      "availability": true,
+      "image": "./image/single.jpg"
+    },
+    {
+      "id": "10",
+      "room_number": "110",
       "room_type": "Double",
       "price": 8000,
       "availability": true,
@@ -49,22 +89,22 @@
       "password": "password123"
     },
     {
-      "id": "2",
-      "username": "rose rose",
-      "email": "rose@gmail.com",
-      "password": "password123"
+      "id": "a9c1",
+      "username": "mark",
+      "email": "mark@gmail.com",
+      "password": "12345678"
     },
     {
-      "id": "ba2f",
-      "username": "destinyFuture",
-      "email": "destiny@gmail.com",
-      "password": "kkkk"
+      "id": "0e37",
+      "username": "leon",
+      "email": "leon@gmail.com",
+      "password": "12345678"
     },
     {
-      "id": "6762",
-      "username": "tha destiny",
-      "email": "destinyy@gmail.com",
-      "password": "12345"
+      "id": "ab69",
+      "username": "emmy",
+      "email": "emmy@gmail.com",
+      "password": "12345678"
     }
   ]
 }
