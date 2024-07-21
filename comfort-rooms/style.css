@@ -114,12 +114,15 @@ body{
 }
 #vacant-rooms-content #room-details p{
    text-align: center;
+   
 
 }
 #vacant-rooms-content #room-details button{
     display: flex;
+    margin-left: 80px;
+    /* flex-direction: row;
    justify-content: center;
-    background-color: green;
+    background-color: green; */
 }
 #contact-content{
     background-color: gray;

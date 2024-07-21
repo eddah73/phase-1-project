@@ -21,7 +21,7 @@
       "room_number": "103",
       "room_type": "Suite",
       "price": 12000,
-      "availability": false,
+      "availability": true,
       "image": "./image/suite.jpg"
     },
     {
@@ -29,7 +29,7 @@
       "room_number": "104",
       "room_type": "Single",
       "price": 5000,
-      "availability": false,
+      "availability": true,
       "image": "./image/single.jpg"
     },
     {
@@ -61,7 +61,7 @@
       "room_number": "108",
       "room_type": "Suite",
       "price": 12000,
-      "availability": false,
+      "availability": true,
       "image": "./image/suite.jpg"
     },
     {
@@ -79,6 +79,30 @@
       "price": 8000,
       "availability": true,
       "image": "./image/double.jpg"
+    },
+    {
+      "id": "11",
+      "room_number": "111",
+      "room_type": "Suite",
+      "price": 12000,
+      "availability": true,
+      "image": "./image/suite.jpg"
+    },
+    {
+      "id": "12",
+      "room_number": "112",
+      "room_type": "Single",
+      "price": 5000,
+      "availability": true,
+      "image": "./image/single.jpg"
+    },
+    {
+      "id": "13",
+      "room_number": "113",
+      "room_type": "Double",
+      "price": 8000,
+      "availability": true,
+      "image": "./image/double.jpg"
     }
   ],
   "users": [
@@ -89,22 +113,10 @@
       "password": "password123"
     },
     {
-      "id": "a9c1",
-      "username": "mark",
-      "email": "mark@gmail.com",
-      "password": "12345678"
-    },
-    {
-      "id": "0e37",
-      "username": "leon",
-      "email": "leon@gmail.com",
-      "password": "12345678"
-    },
-    {
-      "id": "ab69",
-      "username": "emmy",
-      "email": "emmy@gmail.com",
-      "password": "12345678"
+      "id": "de6d",
+      "username": "tha destiny",
+      "email": "tha@gmail.com",
+      "password": "1234567"
     }
   ]
 }

@@ -179,7 +179,7 @@ function renderRooms(roomsData){
 		//add event listener to the button
 		btn.addEventListener('click', () => {
 			if (!room.availability) {
-			  console.log('Room has already been booked!')
+			  alert('Room has already been booked!')
 			} else {
 			 
 			//   room.availability = true
