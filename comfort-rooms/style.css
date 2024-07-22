@@ -191,6 +191,100 @@ body{
     align-items: center;
     margin: 10px;
 }
+@media only screen and (max-width: 768px) {
+    .top-navbar {
+       flex-direction: row;
+       align-items: center;
+     }
+    .top-navbar a {
+       margin: 20px;
+     }
+    .content {
+       margin-top: 80px;
+     }
+     #home-content {
+       height: 100vh;
+       padding: 30px;
+     }
+     #about-content {
+       flex-direction: row;
+     }
+     #about-content #all div {
+       flex: 0 0 50%;
+       margin: 20px;
+     }
+     #vacant-rooms-content {
+       flex-direction: row;
+     }
+     #vacant-rooms-content #room-details {
+       width: 50%;
+       margin: 20px;
+     }
+     #contact-content #contact-all {
+       width: 60%;
+       height: 60%;
+     }
+     #register-content #regcontainer {
+       width: 60%;
+       height: 60%;
+     }
+     #login-content #logcontainer {
+       width: 60%;
+       height: 60%;
+     }
+   }
 
-
+@media only screen and (max-width: 480px) {
+    .top-navbar {
+       flex-direction: column;
+       align-items: center;
+     }
+    .top-navbar a {
+       margin: 10px;
+     }
+    .content {
+       margin-top: 60px;
+     }
+     #home-content {
+       height: 100vh;
+       width: 100%;
+       display: block;
+       
+     }
+     #about-content {
+       flex-direction: column;
+       height: 100vh;
+       background-color: none;
+      
+     }
+     #about-content #all div {
+       /* flex: 0 0 100%; */
+       
+       margin: 10px;
+     }
+     #vacant-rooms-content {
+       /* flex-direction: column; */
+       display: block;
+       margin-left: 50;
+     }
+     #vacant-rooms-content #room-details {
+       width: 100%;
+       margin: 10px;
+     }
+     #contact-content #contact-all {
+       width: 80%;
+       height: 80%;
+     }
+     #register-content #regcontainer {
+       width: 80%;
+       height: 80%;
+     }
+     #login-content #logcontainer {
+       width: 80%;
+       height: 80%;
+     }
+   }
+   
+  
+   
 

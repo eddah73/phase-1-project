@@ -5,7 +5,7 @@
       "room_number": "101",
       "room_type": "Single",
       "price": 5000,
-      "availability": true,
+      "availability": false,
       "image": "./image/single.jpg"
     },
     {
@@ -13,7 +13,7 @@
       "room_number": "102",
       "room_type": "Double",
       "price": 8000,
-      "availability": true,
+      "availability": false,
       "image": "./image/double.jpg"
     },
     {
@@ -117,6 +117,12 @@
       "username": "tha destiny",
       "email": "tha@gmail.com",
       "password": "1234567"
+    },
+    {
+      "id": "fe36",
+      "username": "edah",
+      "email": "edah@gmail.com",
+      "password": "12345678"
     }
   ]
 }
